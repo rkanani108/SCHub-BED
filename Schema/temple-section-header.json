@@ -1,0 +1,97 @@
+{
+    "properties": {},
+    "scripts": {},
+    "fieldsInLists": [],
+    "fieldsInReferences": [],
+    "fields": [
+        {
+            "name": "Intro-section",
+            "properties": {
+                "fieldType": "UI",
+                "editor": "Separator"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Intro-Heading",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Intro-Description",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Intro-CTAText",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Intro-CTAHref",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Place-section",
+            "properties": {
+                "fieldType": "UI",
+                "editor": "Separator"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Place-Heading",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Place-Description",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Place-CTAText",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        },
+        {
+            "name": "Place-CTAHref",
+            "properties": {
+                "fieldType": "String",
+                "editor": "Input",
+                "contentType": "Unspecified"
+            },
+            "partitioning": "invariant"
+        }
+    ],
+    "isPublished": true
+}

@@ -1,0 +1,62 @@
+{
+    properties {},
+    scripts {},
+    fieldsInLists [],
+    fieldsInReferences [],
+    fields [
+        {
+            name Name,
+            properties {
+                fieldType String,
+                editor Input,
+                contentType Unspecified
+            },
+            partitioning invariant
+        },
+        {
+            name TempleImage,
+            properties {
+                fieldType Assets,
+                previewMode ImageAndFileName,
+                minItems 1,
+                maxItems 1
+            },
+            partitioning invariant
+        },
+        {
+            name ShortDescription,
+            properties {
+                fieldType String,
+                editor TextArea,
+                contentType Unspecified
+            },
+            partitioning invariant
+        },
+        {
+            name Description,
+            properties {
+                fieldType String,
+                editor RichText,
+                contentType Unspecified
+            },
+            partitioning invariant
+        },
+        {
+            name DevPhotos,
+            properties {
+                fieldType Assets,
+                previewMode ImageAndFileName
+            },
+            partitioning invariant
+        },
+        {
+            name TemplePhotos,
+            properties {
+                fieldType Assets,
+                previewMode ImageAndFileName
+            },
+            partitioning invariant
+        }
+    ],
+    isPublished true
+}
