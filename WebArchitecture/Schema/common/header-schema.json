@@ -1,0 +1,89 @@
+{
+  "properties": {
+    "label": "Header"
+  },
+  "category": "Common",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "header",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Top Header"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "social-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "schemaIds": [
+          "a82588a1-da57-4c77-b341-bdcc4caeb786"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "work-time",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "email",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "mobile",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "main-header",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Main Header"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "logo",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "page-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 1,
+        "maxItems": 10,
+        "schemaIds": [
+          "7febae72-ce92-4bd7-9db7-688afadb1776"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

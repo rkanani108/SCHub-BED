@@ -1,0 +1,55 @@
+{
+  "properties": {
+    "label": "Projects"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "Name",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "Type",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-description",
+      "properties": {
+        "fieldType": "String",
+        "editor": "TextArea",
+        "label": "Description"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "Image",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "minWidth": 400,
+        "maxWidth": 900,
+        "mustBeImage": true,
+        "allowedExtensions": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

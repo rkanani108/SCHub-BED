@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "label": "Social Icon"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "social-class",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

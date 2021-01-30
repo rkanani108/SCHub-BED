@@ -1,0 +1,175 @@
+{
+  "properties": {
+    "label": "Footer"
+  },
+  "category": "Common",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "About",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "photos",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Photos"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "photo-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "photo-image-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 3,
+        "maxItems": 6,
+        "schemaIds": [
+          "81ce160e-be2d-40ab-9bc0-d6a75fd68d78"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "useful-links",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Useful Links"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "useful-link-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "useful-page-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "schemaIds": [
+          "7febae72-ce92-4bd7-9db7-688afadb1776"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Contact"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "address",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "mobile",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "email-website",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "copyright",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Copyright"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "copyright-text",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "social-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "schemaIds": [
+          "a82588a1-da57-4c77-b341-bdcc4caeb786"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

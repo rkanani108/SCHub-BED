@@ -1,0 +1,48 @@
+{
+  "properties": {
+    "label": "Customer Review"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [
+    "name"
+  ],
+  "fields": [
+    {
+      "name": "image",
+      "properties": {
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "description",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "name",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "designation",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

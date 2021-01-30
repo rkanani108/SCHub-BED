@@ -1,0 +1,189 @@
+﻿@page "/temple/{slug}"
+@using Web.Pages.Search
+@inject Wangkanai.Detection.Services.IDetectionService DetectionService
+@using Wangkanai.Detection.Models;
+@using Web.Helper;
+
+@model  Web.Pages.Search.TempleDetailModel;
+@{
+    ViewData["Title"] = "Home";
+    Web.Helper.AppContext.PageTitle = "Home";
+    string Heading = "Get to know more about Temple and Dev's.";
+}
+
+<component type="typeof(HeroAnimation)" render-mode="Static" />
+
+<h1>@Model.Result.Slug</h1>
+<!--Start Introduction-->
+<section id="summary">
+    <div class="container g-bg-main">
+        <div class="row">
+            <div class="col-lg-2">
+                <component type="typeof(PageNavigation)" render-mode="Static" />
+            </div>
+            <div class="col-lg-8 g-pb-0--lg g-pb-50">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <component type="typeof(SectionHeader)"
+                                   render-mode="Static"
+                                   param-heading='@Heading'
+                                   param-description='"Satisfy your curiosity about one of the holiest temples. We have organized everything you should know about the temple for you to explore."'
+                                   param-CTAText='"Explore More"'
+                                   param-CTAHref='"Hello Href"' />
+                        <component type="typeof(Introduction)" render-mode="Static" />
+                    </div>
+                </div>
+
+                <div class="row g-mt-20">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <component type="typeof(Carousel)"
+                                   render-mode="Static"
+                                   param-Carousel1ID='"carousel1"'
+                                   param-Carousel2ID='"carousel2"' />
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+
+            </div>
+            <div class="col-lg-2 g-mb-60 ">
+
+                <div class="mb-4">
+                    <component type="typeof(SocialMedia)" render-mode="Static" />
+                </div>
+                <div class="mb-4 g-mt-20">
+                    <component type="typeof(Address)" render-mode="Static" />
+                </div>
+                <div class="mb-4">
+                    <component type="typeof(Contact)" render-mode="Static" />
+                </div>
+                <div class="mb-4">
+                    <component type="typeof(Donation)" render-mode="Static" />
+                </div>
+                <hr class="g-my-20">
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Introduction-->
+<!--Start Banner Without Image-->
+<component type="typeof(BannerWithoutImage)" render-mode="Static"
+           param-Title='"NEED TO KNOW ABOUT SPIRTUAL LEADERS?"'
+           param-Description='"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"'
+           param-CTAText='"Read More"'
+           param-CTAHref='"#spirtual-leader"' />
+           />
+<!--End Banner With Image-->
+<!--Start Prasadi Location-->
+<section class="g-pt-60--lg g-pt-50 g-pb-40--lg" id="prasadi-location">
+    <div class="container">
+        <component type="typeof(SectionHeader)"
+                   render-mode="Static"
+                   param-heading='"Visit sacred places in & around the temple"'
+                   param-description='"Lord Swaminarayan has bestowed this temple by spending several times. Here are some of the most sacred locations in & around the temple."'
+                   param-CTAText='"Know More"'
+                   param-CTAHref='"#history"' />
+
+        <component type="typeof(TileCarousel)" render-mode="Static" />
+    </div>
+</section>
+<!--End Prasadi Location-->
+<!--Start Banner With Image-->
+<component type="typeof(BannerWithImage)" render-mode="Static"
+           param-ImageUrl='"assets/images/vadtal.jpg"'
+           param-Title='"NEED TO KNOW ABOUT SPIRTUAL LEADERS?"'
+           param-Description='"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"'
+           param-CTAText='"Read More"'
+           param-CTAHref='"#spirtual-leader"' />
+
+
+           />
+<!--End Banner With Image-->
+<!--Start History-->
+<section class="" id="history">
+    <div class="container g-bg-main">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+
+                <component type="typeof(SectionHeader)"
+                           render-mode="Static"
+                           param-heading='"History: Revisiting the roots of the temple"'
+                           param-description='"Let us take you back in the history books to look into the roots of this temple and why this shrine is holy for millions of devotees."'
+                           param-CTAText='"Look More"'
+                           param-CTAHref='"#spirtual-leader"' />
+
+                <component type="typeof(RTE)" render-mode="Static" />
+
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <!-- End Products Block -->
+    </div>
+
+</section>
+
+<!--End History-->
+<!--Start Banner Without Image-->
+<component type="typeof(BannerWithoutImage)" render-mode="Static"
+           param-Title='"NEED TO KNOW ABOUT SPIRTUAL LEADERS?"'
+           param-Description='"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"'
+           param-CTAText='"Read More"'
+           param-CTAHref='"#spirtual-leader"' />
+           />
+<!--End Banner With Image-->
+<!-- Start Spirtual Leader  -->
+<section id="spirtual-leader">
+    <div class="container">
+
+        <component type="typeof(SectionHeader)"
+                   render-mode="Static"
+                   param-heading='"History: Revisiting the roots of the temple"'
+                   param-description='"Let us take you back in the history books to look into the roots of this temple and why this shrine is holy for millions of devotees."'
+                   param-CTAText='"Look More"'
+                   param-CTAHref='"#spirtual-leader"' />
+
+        <component type="typeof(TileCarousel)" render-mode="Static" />
+    </div>
+
+</section>
+<!-- End Spirtual Leader  -->
+<!--Start Banner With Image-->
+<component type="typeof(BannerWithImage)" render-mode="Static"
+           param-ImageUrl='"assets/images/vadtal.jpg"'
+           param-Title='"NEED TO KNOW ABOUT SPIRTUAL LEADERS?"'
+           param-Description='"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo"'
+           param-CTAText='"Read More"'
+           param-CTAHref='"#spirtual-leader"' />
+
+
+           />
+<!--End Banner With Image-->
+
+
+
+<section class="g-pb-100--lg g-pb-50 g-pt-60" id="temple-photos">
+    <div class="container  g-mb-60">
+
+        <component type="typeof(SectionHeader)"
+                   render-mode="Static"
+                   param-heading='"History: Revisiting the roots of the temple"'
+                   param-description='"Let us take you back in the history books to look into the roots of this temple and why this shrine is holy for millions of devotees."'
+                   param-CTAText='"Look More"'
+                   param-CTAHref='"#spirtual-leader"' />
+
+    </div>
+    <div class="container g-bg-main">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <component type="typeof(Carousel)" render-mode="Static"
+                           param-Carousel1ID='"carousel3"'
+                           param-Carousel2ID='"carousel4"' />
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+
+</section>
+

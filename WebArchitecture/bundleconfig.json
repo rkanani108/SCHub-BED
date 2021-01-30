@@ -1,0 +1,103 @@
+[
+  {
+    "outputFileName": "wwwroot/css/site.min.css",
+    "inputFiles": [
+      "wwwroot/css/site.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/plugins.min.css",
+    "inputFiles": [
+      "wwwroot/assets/vendor/dzsparallaxer/dzsparallaxer.css",
+      "wwwroot/assets/vendor/dzsparallaxer/dzsscroller/scroller.css",
+      "wwwroot/assets/vendor/dzsparallaxer/advancedscroller/plugin.css",
+      "wwwroot/assets/vendor/animate.css",
+      "wwwroot/assets/vendor/fancybox/jquery.fancybox.min.css",
+      "wwwroot/assets/vendor/slick-carousel/slick/slick.css",
+      "wwwroot/assets/vendor/typedjs/typed.css",
+      "wwwroot/assets/vendor/hs-megamenu/src/hs.megamenu.css",
+      "wwwroot/assets/vendor/hamburgers/hamburgers.min.css"
+    ],
+    "minify": {
+      "enabled": false,
+      "renameLocals": true
+    },
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "wwwroot/css/icon.min.css",
+    "inputFiles": [
+      "wwwroot/assets/vendor/icon-awesome/css/font-awesome.min.css",
+      "wwwroot/assets/vendor/icon-line/css/simple-line-icons.css",
+      "wwwroot/assets/vendor/icon-etlinefont/style.css",
+      "wwwroot/css/icon-pro/style.css",
+      "wwwroot/assets/vendor/icon-hs/style.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/css/main.min.css",
+    "inputFiles": [
+      "wwwroot/assets/css/web-core.css",
+      "wwwroot/assets/css/web-components.css",
+      "wwwroot/assets/css/web-globals.css",
+      "wwwroot/assets/css/web.css",
+      "wwwroot/assets/css/custom.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/common.min.js",
+    "inputFiles": [
+      "wwwroot/assets/vendor/jquery/jquery.min.js",
+      "wwwroot/assets/vendor/jquery-migrate/jquery-migrate.min.js",
+      "wwwroot/assets/vendor/popper.js/popper.min.js",
+      "wwwroot/assets/vendor/bootstrap/bootstrap.min.js"
+
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": true
+  },
+  {
+    "outputFileName": "wwwroot/js/menu.min.js",
+    "inputFiles": [
+      "wwwroot/assets/js/hs.core.js",
+      "wwwroot/assets/js/components/hs.header.js",
+      "wwwroot/assets/js/helpers/hs.hamburgers.js",
+      "wwwroot/assets/js/components/hs.scroll-nav.js",
+      "wwwroot/assets/js/components/hs.carousel.js"
+
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/js/plugins.min.js",
+    "inputFiles": [
+      "wwwroot/assets/vendor/dzsparallaxer/dzsparallaxer.js",
+      "wwwroot/assets/vendor/dzsparallaxer/dzsscroller/scroller.js",
+      "wwwroot/assets/vendor/dzsparallaxer/advancedscroller/plugin.js",
+      "wwwroot/assets/vendor/fancybox/jquery.fancybox.min.js",
+      "wwwroot/assets/vendor/typedjs/typed.min.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+]

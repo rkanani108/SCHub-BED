@@ -1,0 +1,23 @@
+﻿@using Web.Components.Page.Temple
+@using Web.Services.Model.Temple;
+
+
+
+@foreach (var item in Result.QueryTempleContents)
+{
+    url = @item.FlatData.TempleImage != null ? @item.FlatData.TempleImage.FirstOrDefault().ThumbnailUrl : @"";
+    <TempleTile Slug=@item.FlatData.Name
+                Title=@item.FlatData.Name
+                Description=@item.FlatData.ShortDescription
+                ImageUrl="@url" />
+
+}
+
+@*(@item.FlatData.TempleImage != null ? @item.FlatData.TempleImage.FirstOrDefault().ThumbnailUrl : @"");*@
+
+@code{
+
+    string url = string.Empty;
+    [Parameter] public QueryTempleData Result { get; set; }
+
+}

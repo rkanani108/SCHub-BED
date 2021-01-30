@@ -1,0 +1,235 @@
+﻿@page "/about"
+@model Web.Pages.AboutusModel
+@using Web.Helper;
+@{
+    ViewData["Title"] = "About us";
+    Web.Helper.AppContext.PageTitle = "About us";
+    var Result = Model.Result;
+}
+
+@if (Model != null)
+{
+
+    <!-- Start Hero -->
+    <section>
+        <div class="g-bg-img-hero g-pos-rel g-mt-130" style="background-image: url(assets/img/bg/bg-img1.png)">
+            <div class="container g-pt-100">
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-4 g-pt-50--lg">
+                        <div class="mb-5">
+                            <h1 class="g-font-size-45 mb-4">@Result.HeroHeading</h1>
+                            <p>@Result.HeroDescription</p>
+                        </div>
+
+                        <a class="js-go-to btn u-shadow-v33 g-hidden-md-down g-color-white g-bg-primary g-bg-main--hover g-rounded-30 g-px-35 g-py-10 animated js-animation-was-fired undefined" href="@Result.HeroCtaLink" data-target="#content" style="display: inline-block;">@Result.HeroCtaText</a>
+                    </div>
+
+                    <div class="col-lg-8 align-self-end">
+                        <div class="u-shadow-v40 g-brd-around g-brd-7 g-brd-secondary rounded" style="width:fit-content;">
+                            <img class="img-fluid rounded" src="@UrlHelper.cdn(Result.HeroImage.First().Url)?w=626&h=417&func=crop" alt="Image Description">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SVG Bottom Background Shape -->
+            <svg class="g-pos-abs g-bottom-0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1921 183.5" enable-background="new 0 0 1921 183.5" xml:space="preserve">
+            <path fill="#FFFFFF" d="M0,183.5v-142c0,0,507,171,1171,58c0,0,497-93,750,84H0z"></path>
+            <path opacity="0.2" fill="#FFFFFF" d="M0,183V0c0,0,507,220.4,1171,74.7c0,0,497-119.9,750,108.3H0z"></path>
+        </svg>
+            <!-- End SVG Bottom Background Shape -->
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <div class="dzsparallaxer auto-init height-is-based-on-content g-bg-gray-gradient-opacity-v1 mode-scroll dzsprx-readyall" data-options="{direction: &quot;reverse&quot;, animation_duration: &quot;200&quot;}">
+        <div class="dzsparallaxer--target" style="width: 100%; height: 130%; transform: translate3d(0px, -164.338px, 0px);">
+        </div>
+        <div class="container g-py-100 g-pb-0--lg">
+            <!-- Masonry -->
+            <div class="masonry-grid row mb-5" style="position: relative; height: 475.969px;">
+                <div class="masonry-grid-sizer col-sm-1"></div>
+                <div class="masonry-grid-item col-lg-6 g-mb-100" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="g-pr-40--lg">
+                        <!-- Heading -->
+                        <span class="d-block g-color-primary g-font-size-17 text-uppercase mb-4">@Result.AboutTitle</span>
+                        <h2 class="h2 g-color-black g-font-weight-600 mb-4">@Result.AboutHeading</h2>
+                        <p class="lead mb-5">
+                            @Result.AboutDescription
+                        </p>
+                        <a class="btn btn-md u-btn-inset u-btn-cyan g-mr-10 g-mb-15" href="@Result.AboutCtaLink"><i class="fa fa-handshake-o g-mr-3"></i> @Result.AboutCtaText</a>
+                        <!-- End Heading -->
+                    </div>
+                </div>
+                <div class="masonry-grid-item col-sm-6 col-lg-3 g-mb-30 g-hidden-xs-down" style="position: absolute; left: 50%; top: 0px;">
+                    <div data-parallaxanimation="[{property: &quot;transform&quot;, value:&quot; translate3d(0,px,0)&quot;, initial:&quot;-25&quot;, mid:&quot;0&quot;, final:&quot;25&quot;}]">
+                        <img class="img-fluid w-100" src="@UrlHelper.cdn(Result.AboutLeftImg1.First().Url)?w=255&h=170&func=crop" alt="Image Description">
+                    </div>
+                </div>
+                <div class="masonry-grid-item col-sm-6 col-lg-3 mt-5 g-mb-30 g-hidden-xs-down" style="position: absolute; left: 75%; top: 0px;">
+                    <div data-parallaxanimation="[{property: &quot;transform&quot;, value:&quot; translate3d(0,px,0)&quot;, initial:&quot;25&quot;, mid:&quot;0&quot;, final:&quot;-25&quot;}]">
+                        <img class="img-fluid w-100" src="@UrlHelper.cdn(Result.AboutRightImg.First().Url)?w=255&h=363&func=crop" alt="Image Description">
+                    </div>
+                </div>
+                <div class="masonry-grid-item col-sm-6 col-lg-3 g-mb-30 g-hidden-xs-down" style="position: absolute; left: 50%; top: 197.563px;">
+                    <div data-parallaxanimation="[{property: &quot;transform&quot;, value:&quot; translate3d(0,px,0)&quot;, initial:&quot;-45&quot;, mid:&quot;0&quot;, final:&quot;45&quot;}]">
+                        <img class="img-fluid w-100" src="@UrlHelper.cdn(Result.AboutLeftImg2.First().Url)?w=255&h=170&func=crop" alt="Image Description">
+                    </div>
+                </div>
+            </div>
+            <!-- End Masonry -->
+        </div>
+    </div>
+
+    <section class="dzsparallaxer auto-init height-is-based-on-content mode-scroll dzsprx-readyall">
+        <!-- Parallax Image -->
+        <div class="dzsparallaxer--target w-100 g-bg-size-cover u-bg-overlay g-bg-black-opacity-0_3--after" style="height: 140%; background: url(&quot;../../assets/images/web/8.jpg&quot;); transform: translate3d(0px, -79.1676px, 0px);"></div>
+        <!-- End Parallax Image -->
+
+        <div class="container g-pos-rel g-z-index-1 g-pt-120 g-pb-70">
+            <div class="row text-center text-uppercase g-color-white">
+                <!-- Counters -->
+                <div class="col-md-3 col-6 g-mb-50">
+                    <i class="@Result.StateIcon1.First().FlatData.IconClass display-5 mb-3"></i>
+                    <div class="js-counter g-font-size-32 mb-2">@Result.StateCount1</div>
+                    <h4 class="h5 g-font-weight-300 mb-0">@Result.StateText1</h4>
+                </div>
+                <!-- End Counters -->
+                <!-- Counters -->
+                <div class="col-md-3 col-6 g-mb-50">
+                    <i class="@Result.StateIcon2.First().FlatData.IconClass display-5 mb-3"></i>
+                    <div class="js-counter g-font-size-32 mb-2">@Result.StateCount2</div>
+                    <h4 class="h5 g-font-weight-300 mb-0">@Result.StateText2</h4>
+                </div>
+                <!-- End Counters -->
+                <!-- Counters -->
+                <div class="col-md-3 col-6 g-mb-50">
+                    <i class="@Result.StateIcon3.First().FlatData.IconClass display-5 mb-3"></i>
+                    <div class="js-counter g-font-size-32 mb-2">@Result.StateCount3</div>
+                    <h4 class="h5 g-font-weight-300 mb-0">@Result.StateText3</h4>
+                </div>
+                <!-- End Counters -->
+                <!-- Counters -->
+                <div class="col-md-3 col-6 g-mb-50">
+                    <i class="@Result.StateIcon4.First().FlatData.IconClass display-5 mb-3"></i>
+                    <div class="js-counter g-font-size-32 mb-2">@Result.StateCount4</div>
+                    <h4 class="h5 g-font-weight-300 mb-0">@Result.StateText4</h4>
+                </div>
+                <!-- End Counters -->
+            </div>
+        </div>
+    </section>
+
+    <section class="container g-pt-100 g-pb-70">
+        <div class="row justify-content-center g-mb-60">
+            <div class="col-lg-7">
+                <!-- Heading -->
+                <div class="text-center">
+                    <h2 class="h3 g-color-black text-uppercase mb-2">@Result.TeamHeading</h2>
+                    <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+                    <p class="lead mb-0">@Result.TeamDescription</p>
+                </div>
+                <!-- End Heading -->
+            </div>
+        </div>
+
+        <div class="row">
+
+            @foreach (var item in Result.TeamLinks)
+            {
+                <div class="col-lg-3 col-sm-6 g-mb-30">
+                    <!-- Team Block -->
+                    <figure class="u-block-hover">
+                        <!-- Figure Image -->
+                        <img class="w-100" src="@UrlHelper.cdn(item.FlatData.Image.First().Url)?w=255&h=350&func=crop" alt="Image description">
+                        <!-- End Figure Image-->
+                        <!-- Figure Info -->
+                        <figcaption class="u-block-hover__additional--partially-slide-up g-mx-15">
+                            <div class="text-center g-bg-white g-pb-20">
+                                <!-- Figure Info -->
+                                <div class="u-block-hover__visible g-pt-20 g-pb-15 g-y-20">
+                                    <h4 class="h5 g-color-black g-mb-5">@item.FlatData.Name</h4>
+                                    <em class="d-block g-font-style-normal g-font-size-11 text-uppercase g-color-primary">@item.FlatData.Designation</em>
+                                </div>
+                                <!-- End Info -->
+                                <!-- Figure Social Icons -->
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="@item.FlatData.Twitter" class="u-icon-v1 u-icon-size--sm g-color-gray-light-v1 g-color-twitter--hover g-bg-transparent">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="@item.FlatData.Facebook" class="u-icon-v1 u-icon-size--sm g-color-gray-light-v1 g-color-facebook--hover g-bg-transparent">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Figure Social Icons -->
+                            </div>
+                        </figcaption>
+                        <!-- End Figure Info-->
+                    </figure>
+                    <!-- End Team Block -->
+                </div>
+            }
+        </div>
+    </section>
+
+    <section class="g-bg-gray-light-v5 g-py-100">
+        <div class="container">
+            <div class="row justify-content-center g-mb-60">
+                <div class="col-lg-7">
+                    <!-- Heading -->
+                    <div class="text-center">
+                        <h2 class="h3 g-color-black text-uppercase mb-2">@Result.CustomerHeading</h2>
+                        <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+                        <p class="lead mb-0">@Result.CustomerDescription</p>
+                    </div>
+                    <!-- End Heading -->
+                </div>
+            </div>
+
+            <div class="row">
+                @foreach (var item in Result.CustomerLinks)
+                {
+                    <div class="col-lg-6 g-mb-30">
+                        <!-- Testimonials -->
+                        <div style="        background-image: url(assets/img/back-img1.png);" class="media g-brd-bottom g-brd-3 g-brd-gray-light-v4 g-brd-primary--hover g-bg-white g-rounded-4 g-transition-0_3 g-pa-20">
+                            <div class="d-flex mr-4">
+                                <img class="g-width-70 g-height-70 rounded-circle" src="@UrlHelper.cdn(item.FlatData.Image.First().Url)?w=70&h=70&func=crop" alt="Image description">
+                            </div>
+                            <div class="media-body">
+                                <blockquote class="lead g-mb-15">@item.FlatData.Description</blockquote>
+                                <h4 class="h6 g-font-weight-700 g-mb-0">@item.FlatData.Name</h4>
+                                <em class="g-color-gray-dark-v4 g-font-style-normal g-font-size-13">@item.FlatData.Designation</em>
+                            </div>
+                        </div>
+                        <!-- End Testimonials -->
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    var ctaHeadPart = Result.CtaContactLink.First().FlatData.CtaHeading.Split("|");
+
+    <section class="g-brd-around g-brd-5 g-brd-gray-light-v4 g-pa-30 g-my-80 container">
+
+        <div class="row">
+            <div class="col-md-9 align-self-center">
+                <h3 class="h4">
+                    @ctaHeadPart[0] &nbsp;<a class="g-color-primary" href="mailto:@Result.CtaContactLink.First().FlatData.CtaEmail">@Result.CtaContactLink.First().FlatData.CtaEmail</a>
+                    &nbsp;@ctaHeadPart[1]
+                    <a class="g-color-primary" href="tel:@Result.CtaContactLink.First().FlatData.CtaMobileNumber"> @Result.CtaContactLink.First().FlatData.CtaMobileNumber</a>
+                </h3>
+                <p class="lead g-mb-20 g-mb-0--md">@Result.CtaContactLink.First().FlatData.CtaDescription</p>
+            </div>
+
+            <div class="col-md-3 align-self-center text-md-right">
+                <a class="btn btn-md u-btn-inset u-btn-cyan g-mr-10 g-mb-15" href="@Result.CtaContactLink.First().FlatData.CtaButtonLink1"><i class="fa fa-phone g-mr-3"></i> @Result.CtaContactLink.First().FlatData.CtaButtonText1</a>
+            </div>
+        </div>
+    </section>
+}

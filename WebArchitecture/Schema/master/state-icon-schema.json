@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "label": "State Icon"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "icon-class",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

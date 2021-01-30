@@ -1,0 +1,220 @@
+{
+  "properties": {},
+  "category": "Pages",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "Hero",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-heading",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-description",
+      "properties": {
+        "fieldType": "String",
+        "editor": "TextArea"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-button-text1",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-button-link1",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-button-text2",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-button-link2",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minWidth": 300,
+        "maxWidth": 600,
+        "minHeight": 178,
+        "maxHeight": 350,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "recent-project",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "recent-project-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "recent-project-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "TextArea"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "recent-project-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 2,
+        "maxItems": 2,
+        "schemaIds": [
+          "81ce160e-be2d-40ab-9bc0-d6a75fd68d78"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-block",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-block-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "491478f0-9a3e-4de6-a86a-fb8d62486524"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "projects",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-heading",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 3,
+        "maxItems": 9,
+        "schemaIds": [
+          "81ce160e-be2d-40ab-9bc0-d6a75fd68d78"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-contact-block",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-contact-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "491478f0-9a3e-4de6-a86a-fb8d62486524"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

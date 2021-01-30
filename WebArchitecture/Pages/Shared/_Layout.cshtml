@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <partial name="_GlobalCss" />
+</head>
+<body>
+    <!-- Header -->
+    <header id="js-header" class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance" data-header-fix-moment="300">
+        @*<component type="typeof(TopHeader)" render-mode="Static" />*@
+        @*<partial name="_Header" />*@
+        @*<component type="typeof(Header)" render-mode="Static" />*@
+    </header>
+    <!-- End Header -->
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<component type="typeof(Footer)" render-mode="Static" />*@
+
+    <partial name="_GlobalJs" />
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

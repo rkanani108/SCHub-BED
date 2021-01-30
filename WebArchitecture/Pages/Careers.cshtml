@@ -1,0 +1,289 @@
+﻿@page "/careers"
+@model Web.Pages.CareersModel
+@using Web.Helper;
+@{
+    ViewData["Title"] = "Careers";
+    Web.Helper.AppContext.PageTitle = "Careers";
+    var Result = Model?.Result;
+}
+
+@if (Result != null)
+{
+
+    <!-- Start Hero-->
+    <section>
+        <div class="g-bg-img-hero g-mt-130" style="background-image: url(../../../assets/include/svg/svg-bg3.svg);">
+            <div class="container g-py-100">
+                <div class="row justify-content-lg-between align-items-center">
+                    <div class="col-md-6 g-mb-50 g-mb-0--md">
+                        <img class="img-fluid u-shadow-v39 g-brd-around g-brd-10 g-brd-white rounded" src="@UrlHelper.cdn(Result.HeroImage.First().Url)?w=520&h=346&func=crop" alt="Image Description">
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="mb-4">
+                            <h1 class="g-color-black mb-3">@Result.HeroHeading</h1>
+                            <p>@Result.HeroDescription</p>
+                        </div>
+                        <a class="btn btn-md u-btn-inset u-btn-inset--rounded u-btn-cyan g-font-weight-600 g-letter-spacing-0_5 text-uppercase g-brd-2 g-rounded-50 g-mr-10 g-mb-15" href="@Result.CtaBlockLink"><i class="fa fa-book g-mr-3"></i> @Result.HeroCtaText</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="text-center g-py-100">
+        <div class="container">
+            <header class="text-center g-width-80x--md mx-auto g-mb-50">
+                <div class="u-heading-v6-2 text-center text-uppercase g-mb-20">
+                    <h6 class="g-font-size-12 g-font-weight-600">@Result.HiringTitle</h6>
+                    <h2 class="h3 u-heading-v6__title g-brd-primary g-color-gray-dark-v2 g-font-weight-600">@Result.HiringHeading</h2>
+                </div>
+                @Html.Raw(Result.HiringDescription)
+                @*<p class="lead">Lorem ipsum dolor <span class="g-color-primary">sit amet consectetur</span> adipiscing elit. Nam eget varius leo, at elementum eros. Fusce tristique, ipsum egestas fermentum imperdiet, ex nunc iaculis sem, a semper augue turpis ut nulla.</p>*@
+            </header>
+
+            <div class="g-bg-img-hero g-pb-70" style="background-image: url(@UrlHelper.cdn(Result.HiringBackgroundImage.First().Url)">
+                <div class="row justify-content-center g-pt-100--md">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="g-brd-around g-brd-3 g-brd-gray-light-v4 rounded g-py-80 g-pl-50 g-pr-80">
+                            <i class="d-block g-color-primary g-font-size-40 g-line-height-0_7 g-pos-rel g-top-15 g-mb-25">“</i>
+                            <blockquote class="g-color-black-opacity-0_6 g-font-size-22 g-line-height-1_8 g-mb-40">
+                                <em>@Result.HiringPersonQuota</em>.
+                            </blockquote>
+                            <h4 class="g-color-black-opacity-0_4 g-font-weight-700 g-font-size-13 text-uppercase g-mb-0">
+                                <span class="d-inline-block g-width-40 g-height-2 g-bg-black-opacity-0_4 g-pos-rel g-top-minus-3 mr-2"></span>
+                                @Result.HiringPersonName
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 g-hidden-sm-down g-bg-size-cover g-min-height-300 g-pos-rel rounded g-top-minus-70 g-ml-minus-50" data-bg-img-src="@UrlHelper.cdn(Result.HiringPersonImage.First().Url)?w=350&h=432&func=crop" style="background-image: url(@UrlHelper.cdn(Result.HiringPersonImage.First().Url))"></div>
+                </div>
+            </div>
+
+            <p class="g-color-gray-dark-v5 mb-0">
+                @Html.Raw(Result.HiringStatement)
+                @*Be Our Exclusive Partner! <a href="contact">Contact Us</a>*@
+            </p>
+        </div>
+    </section>
+    var ctaHeadPart = Result.CtaBlockLink.First().FlatData.CtaHeading.Split("|");
+
+
+
+
+
+
+    <!--NEW-->
+
+    <section class="g-bg-secondary g-py-100">
+        <div class="container">
+            <div class="text-center g-mb-50">
+                <h2 class="h4">
+                    Our Work
+                    <span class="g-color-primary g-ml-5"> Culture</span>
+                </h2>
+            </div>
+
+            <div id="shortcode34">
+                <div class="shortcode-html">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 g-mb-30">
+                            <!-- Article -->
+                            <article class="u-shadow-v28 g-bg-white">
+                                <img class="img-fluid w-100" src="../../assets/img-temp/500x335/img1.jpg" alt="Image Description">
+
+                                <div class="g-pos-rel">
+                                    <!-- SVG Background -->
+                                    <svg class="g-pos-abs g-left-0 g-right-0" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="140px" viewBox="20 -20 300 100" style="top: -70%;">
+                                        <path d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729 c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" opacity="0.4" fill="#f0f1f3"></path>
+                                        <path d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729 c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" opacity="0.4" fill="#f0f1f3"></path>
+                                        <path d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716 H42.401L43.415,98.342z" opacity="0" fill="#fff"></path>
+                                        <path d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428 c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#fff"></path>
+                                    </svg>
+                                    <!-- End SVG Background -->
+
+                                    <div class="g-pos-rel g-z-index-1 g-pa-30">
+                                        <h3 class="h5 mb-3">
+                                            <a class="u-link-v5 g-color-black g-color-primary--hover" href="#">Free virtual conference to take your agile ux skills to the next level</a>
+                                        </h3>
+                                        <a class="u-link-v5 g-color-text g-color-primary--hover g-font-weight-500" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- End Article -->
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 g-mb-30">
+                            <!-- Article -->
+                            <article class="u-shadow-v28 g-bg-white">
+                                <img class="img-fluid w-100" src="../../assets/img-temp/500x335/img2.jpg" alt="Image Description">
+
+                                <div class="g-pos-rel">
+                                    <!-- SVG Background -->
+                                    <svg class="g-pos-abs g-left-0 g-right-0" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="140px" viewBox="20 -20 300 100" style="top: -70%;">
+                                        <path d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729 c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" opacity="0.4" fill="#f0f1f3"></path>
+                                        <path d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729 c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" opacity="0.4" fill="#f0f1f3"></path>
+                                        <path d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716 H42.401L43.415,98.342z" opacity="0" fill="#fff"></path>
+                                        <path d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428 c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#fff"></path>
+                                    </svg>
+                                    <!-- End SVG Background -->
+
+                                    <div class="g-pos-rel g-z-index-1 g-pa-30">
+                                        <h3 class="h5 mb-3">
+                                            <a class="u-link-v5 g-color-black g-color-primary--hover" href="#">More than a look, design is functional.</a>
+                                        </h3>
+                                        <a class="u-link-v5 g-color-text g-color-primary--hover g-font-weight-500" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- End Article -->
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 g-mb-30">
+                            <!-- Article -->
+                            <article class="u-shadow-v28 g-bg-white">
+                                <img class="img-fluid w-100" src="../../assets/img-temp/500x335/img3.jpg" alt="Image Description">
+
+                                <div class="g-pos-rel">
+                                    <!-- SVG Background -->
+                                    <svg class="g-pos-abs g-left-0 g-right-0" version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="140px" viewBox="20 -20 300 100" style="top: -70%;">
+                                        <path d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729 c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z" opacity="0.4" fill="#f0f1f3"></path>
+                                        <path d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729 c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z" opacity="0.4" fill="#f0f1f3"></path>
+                                        <path d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716 H42.401L43.415,98.342z" opacity="0" fill="#fff"></path>
+                                        <path d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428 c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z" fill="#fff"></path>
+                                    </svg>
+                                    <!-- End SVG Background -->
+
+                                    <div class="g-pos-rel g-z-index-1 g-pa-30">
+                                        <h3 class="h5 mb-3">
+                                            <a class="u-link-v5 g-color-black g-color-primary--hover" href="#">Multi-Swipe: New UX to act on many items (emails) really fast</a>
+                                        </h3>
+                                        <a class="u-link-v5 g-color-text g-color-primary--hover g-font-weight-500" href="#">Read More</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- End Article -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!---->
+
+
+
+
+
+
+
+    <!-- Start Quato -->
+    <section class=" g-my-60 g-py-80 g-px-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 align-self-center">
+                    <h3 class="h4">
+                        @ctaHeadPart[0]&nbsp;<a class="g-color-primary" href="mailto:@Result.CtaBlockLink.First().FlatData.CtaEmail">@Result.CtaBlockLink.First().FlatData.CtaEmail</a>
+                        &nbsp;@ctaHeadPart[1]
+                        <a class="g-color-primary" href="tel:@Result.CtaBlockLink.First().FlatData.CtaMobileNumber"> @Result.CtaBlockLink.First().FlatData.CtaMobileNumber</a>
+                    </h3>
+                    <p class="lead g-mb-20 g-mb-0--md">@Result.HeroDescription</p>
+                </div>
+
+                <div class="col-md-3 align-self-center text-md-right">
+                    <a class="btn btn-md u-btn-inset u-btn-cyan g-mr-10 g-mb-15" href="@Result.HeroCtaLink">@*<i class="fa fa-map-marker g-mr-3"></i>*@ @Result.HeroCtaText</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Quato-->
+
+
+
+
+<section class="g-bg-secondary g-py-100">
+    <div class="container">
+        <div class="text-center g-mb-50">
+            <h2 class="h4">
+                Way of
+                <span class="g-color-primary g-ml-5">Working</span>
+            </h2>
+        </div>
+
+        <div id="shortcode40">
+            <div class="shortcode-html">
+                <div class="card-group d-block d-md-flex g-mx-minus-15">
+  
+
+                    <div class="card u-shadow-v36 g-brd-none g-mx-15 g-mb-30">
+                        <!-- Research Article -->
+                        <article>
+                            <div class="g-pos-rel">
+                                <img class="img-fluid" src="../../assets/img-temp/600x350/img9.jpg" alt="Image Description">
+                                <a class="js-fancybox g-absolute-centered" href="javascript:;" data-src="//www.youtube.com/watch?v=FxiskmF16gU" data-speed="350" data-caption="Video">
+                                    <span class="u-icon-v3 u-icon-size--lg u-block-hover--scale g-color-main g-color-white--hover g-bg-white-opacity-0_5 g-bg-white-opacity-0_3--hover g-font-size-25 rounded-circle">
+                                        <i class="g-pos-rel g-left-2 fa fa-play"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="card-body g-bg-white text-center g-pa-20">
+                                <h3 class="h4 mb-0">Qantas customers help shape future of inflight health and wellness</h3>
+                            </div>
+                        </article>
+                        <!-- End Research Article -->
+                    </div>
+
+                    <div class="card u-shadow-v36 g-brd-none g-mx-15 g-mb-30">
+                        <!-- Research Article -->
+                        <article>
+                            <div class="g-pos-rel">
+                                <img class="img-fluid" src="../../assets/img-temp/600x350/img10.jpg" alt="Image Description">
+                                <a class="js-fancybox g-absolute-centered" href="javascript:;" data-src="//www.youtube.com/watch?v=FxiskmF16gU" data-speed="350" data-caption="Video">
+                                    <span class="u-icon-v3 u-icon-size--lg u-block-hover--scale g-color-main g-color-white--hover g-bg-white-opacity-0_5 g-bg-white-opacity-0_3--hover g-font-size-25 rounded-circle">
+                                        <i class="g-pos-rel g-left-2 fa fa-play"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="card-body g-bg-white text-center g-pa-20">
+                                <h3 class="h4 mb-0">Lambert Initiative for Cannabinoid Therapeutics</h3>
+                            </div>
+                        </article>
+                        <!-- End Research Article -->
+                    </div>
+                </div>
+            </div>
+
+          
+
+         
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+}

@@ -1,0 +1,396 @@
+{
+  "properties": {
+    "label": "About us",
+    "tags": [
+      "pages"
+    ]
+  },
+  "category": "Pages",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "Hero",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-text",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image",
+      "properties": {
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-title",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-cta-text",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-cta-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-left-img1",
+      "properties": {
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-left-img2",
+      "properties": {
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-right-img",
+      "properties": {
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-img",
+      "properties": {
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-1",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-icon-1",
+      "properties": {
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "aa582243-6eec-4de1-bff9-dfe670d03fdf"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-count-1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-text-1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-2",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-icon-2",
+      "properties": {
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "aa582243-6eec-4de1-bff9-dfe670d03fdf"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-count-2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-text-2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-icon-3",
+      "properties": {
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "aa582243-6eec-4de1-bff9-dfe670d03fdf"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-count-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-text-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-4",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-icon-4",
+      "properties": {
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "aa582243-6eec-4de1-bff9-dfe670d03fdf"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-count-4",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "state-text-4",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team-links",
+      "properties": {
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 4,
+        "maxItems": 4,
+        "schemaIds": [
+          "1f27d233-c82d-4ae8-8f79-2ce87e516b64"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "customer",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "customer-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "customer-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "customer-links",
+      "properties": {
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 4,
+        "maxItems": 4,
+        "schemaIds": [
+          "4fc5a95a-4b8f-4345-942e-1f3e7b79fd3e"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

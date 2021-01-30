@@ -1,0 +1,22 @@
+﻿<section class="dzsparallaxer auto-init height-is-based-on-content use-loading g-my-80 mode-scroll loaded dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}">
+    <div class="divimage dzsparallaxer--target w-100 g-bg-repeat" style="height: 200%; background-image: url(&quot;assets/img/bg/pattern4.png&quot;); transform: translate3d(0px, -92.6002px, 0px);"></div>
+    <div class="container">
+        <div class="row g-py-50">
+
+            <div class="col-lg-8 align-self-lg-center">
+                <h2 class="text-uppercase">@Title</h2>
+                <p class="lead g-mb-20 g-mb-0--lg">@Description</p>
+            </div>
+            <div class="col-lg-4 align-self-lg-center">
+                <a class="btn btn-md u-btn-inset u-btn-cyan g-py-10 g-px-15" href="@CTAHref">@CTAText <i class="fa fa-arrow-circle-down g-mx-5"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@code{
+    [Parameter] public string Title { get; set; } = "Description";
+    [Parameter] public string Description { get; set; } = "Description";
+    [Parameter] public string CTAText { get; set; } = "CTAText";
+    [Parameter] public string CTAHref { get; set; } = "CTAHref";
+}

@@ -1,0 +1,83 @@
+{
+  "properties": {
+    "label": "CTA Block"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "cta-heading",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-description",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-image",
+      "properties": {
+        "fieldType": "Assets"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-button-text1",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-button-link1",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-button-text2",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-button-link2",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-email",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-mobile-number",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

@@ -1,0 +1,156 @@
+{
+  "properties": {
+    "label": "Careers"
+  },
+  "category": "Pages",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "Hero",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "her0-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "TextArea"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image",
+      "properties": {
+        "fieldType": "Assets"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-text",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-title",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-heading",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-description",
+      "properties": {
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-person-image",
+      "properties": {
+        "fieldType": "Assets"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-person-quota",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-person-name",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-background-image",
+      "properties": {
+        "fieldType": "Assets",
+        "mustBeImage": true
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hiring-statement",
+      "properties": {
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-block",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-block-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "491478f0-9a3e-4de6-a86a-fb8d62486524"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

@@ -1,0 +1,25 @@
+﻿<div class="col-md-4 g-mb-25">
+    <!-- Article -->
+    <article class="g-pb-30 temple-article-list">
+        <img class="img-fluid w-100" src="@ImageUrl" alt="Image Description u-block-hover__main--zoom-v1">
+        <div class="g-bg-white g-pos-rel g-pa-20 g-mx-20 g-mt-minus-70 tile-text-card">
+            <h3 class="h3 g-mb-10">
+                <a class="u-link-v5 g-color-gray-dark-v2 g-color-primary--hover" href="/@Slug">
+                  @Title
+                </a>
+            </h3>
+            <p>@Description.Substring(0,30) ...</p>
+            <!-- <a class="font-italic u-link-v1" href="#">Read More</a> -->
+        </div>
+    </article>
+    <!-- End Article -->
+</div>
+
+@code{
+
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Description { get; set; }
+    [Parameter] public string ImageUrl { get; set; }
+    [Parameter] public string Slug { get; set; }
+
+}

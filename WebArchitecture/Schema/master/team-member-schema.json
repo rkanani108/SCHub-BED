@@ -1,0 +1,68 @@
+{
+  "properties": {
+    "label": "Team Member"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "name",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "designation",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "image",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "mustBeImage": true,
+        "allowedExtensions": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "social-links",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "facebook",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "twitter",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

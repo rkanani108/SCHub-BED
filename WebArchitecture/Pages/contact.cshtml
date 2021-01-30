@@ -1,0 +1,87 @@
+﻿@page "/contact"
+@model Web.Pages.ContactModel
+@using Web.Helper;
+@{
+    ViewData["Title"] = "Contact us";
+    Web.Helper.AppContext.PageTitle = "Contact us";
+    var Result = Model?.Result;
+}
+@if (Result != null)
+{
+
+    <!-- Promo Block -->
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall g-mt-130" data-options="{direction: &quot;fromtop&quot;, animation_duration: 25, direction: &quot;reverse&quot;}">
+        <!-- Parallax Image -->
+        <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-black-opacity-0_4--after" style="        height: 140%;
+        background-image: url( @UrlHelper.cdn(Result.HeroImage.First().Url)?w=1903&h=553&func=crop);
+        transform: translate3d(0px, -89.692px, 0px);"></div>
+        <!-- End Parallax Image -->
+        <!-- Promo Block Content -->
+        <div class="container g-color-white text-center g-py-150">
+            <h1 class="h2 g-font-weight-300">@Result.HeroTitle</h1>
+            <h3 class="h1 g-font-weight-600 text-uppercase g-letter-spacing-1 mb-0">@Result.HeroHeading</h3>
+        </div>
+        <!-- Promo Block Content -->
+    </section>
+    <!-- End Block -->
+
+    <section class="container">
+        <!-- Icon Blocks -->
+        <div class="row no-gutters u-shadow-v21 g-mt-minus-100">
+            <div class="col-sm-6 col-md-4 g-brd-right--md g-brd-gray-light-v4">
+                <!-- Icon Blocks -->
+                <div class="g-bg-white text-center g-py-40">
+                    <span class="u-icon-v1 u-icon-size--xl g-color-primary mb-3">
+                        <i class="icon-real-estate-027 u-line-icon-pro"></i>
+                    </span>
+                    <h4 class="h5 g-font-weight-600 g-mb-5">@Result.ContactAddressLabel</h4>
+                    <span class="d-block">
+                        @Html.Raw(Result.ContactAddress)
+                    </span>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-sm-6 col-md-4 g-brd-right--md g-brd-gray-light-v4">
+                <!-- Icon Blocks -->
+                <div class="g-bg-white text-center g-py-40--sm">
+                    <span class="u-icon-v1 u-icon-size--xl g-color-primary mb-3">
+                        <i class="icon-electronics-005 u-line-icon-pro"></i>
+                    </span>
+                    <h4 class="h5 g-font-weight-600 g-mb-5">@Result.ContactMobileLabel</h4>
+                    @Html.Raw(Result.ContactMobile)
+                    @*<span class="d-block">+91 96012 90042</span>
+                        <span class="d-block">+91 96012 90043</span>*@
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <!-- Icon Blocks -->
+                <div class="g-bg-white text-center g-py-40">
+                    <span class="u-icon-v1 u-icon-size--xl g-color-primary mb-3">
+                        <i class="icon-communication-062 u-line-icon-pro"></i>
+                    </span>
+                    <h4 class="h5 g-font-weight-600 g-mb-5">@Result.ContactEmailLabel</h4>
+                    <span class="d-block">  @Result.ContactEmail</span>
+                </div>
+                <!-- End Icon Blocks -->
+            </div>
+
+            <!-- End Icon Blocks -->
+        </div>
+    </section>
+
+    <section>
+        <div class="g-py-100">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div style="width: 100%">
+
+                        @Html.Raw(Result.ContactMap)
+                    </div><br />
+                </div>
+            </div>
+        </div>
+    </section>
+}

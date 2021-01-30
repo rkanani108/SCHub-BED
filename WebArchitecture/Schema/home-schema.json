@@ -1,0 +1,462 @@
+{
+  "properties": {
+    "label": "Home",
+    "tags": [
+      "pages"
+    ]
+  },
+  "category": "Pages",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "hero",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Hero"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "label": "Image"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-h1",
+      "properties": {
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Heading 1"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-h2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Heading 2"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Description"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "CTA 1"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-cta2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "CTA 2"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "about-company",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "About Company"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ac-h1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Heading"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ac-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "TextArea",
+        "label": "Description"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ac-cta1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "CTA 1"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ac-cta2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "CTA 2"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ac-image",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "label": "Image"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator",
+        "label": "Quote"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote-prefix",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Quote Prefix"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote-text-1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Quote Text 1"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote-text-2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Quote Text 2"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote-text-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Quote Text 3"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input",
+        "label": "Description"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "quote-image",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "resolveFirst": true,
+        "resolveImage": true,
+        "label": "Image"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "Ethics",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-heading-1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-description-1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-image-1",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "allowedExtensions": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-heading-2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-description-2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-image-2",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "allowedExtensions": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-heading-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-description-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "ethics-image-3",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "Assets",
+        "minItems": 1,
+        "maxItems": 1,
+        "allowedExtensions": [
+          "jpg",
+          "jpeg",
+          "png"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "projects",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "project-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 3,
+        "maxItems": 6,
+        "schemaIds": [
+          "81ce160e-be2d-40ab-9bc0-d6a75fd68d78"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "our-team",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team-description",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "team-links",
+      "properties": {
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 3,
+        "maxItems": 4,
+        "schemaIds": [
+          "1f27d233-c82d-4ae8-8f79-2ce87e516b64"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-contact-block",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-contact-link",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "491478f0-9a3e-4de6-a86a-fb8d62486524"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-explore-block",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-explore-link",
+      "properties": {
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "491478f0-9a3e-4de6-a86a-fb8d62486524"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-contact-explore-block",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "cta-contact-explore-link",
+      "properties": {
+        "fieldType": "References",
+        "editor": "List",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "491478f0-9a3e-4de6-a86a-fb8d62486524"
+        ]
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

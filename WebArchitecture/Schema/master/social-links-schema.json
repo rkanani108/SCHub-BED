@@ -1,0 +1,44 @@
+{
+  "properties": {
+    "label": "Social Links"
+  },
+  "category": "Master",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "social-icon-links",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "References",
+        "editor": "Dropdown",
+        "minItems": 1,
+        "maxItems": 1,
+        "schemaIds": [
+          "9b658bc5-3894-4cf9-b722-a46338fefe4a"
+        ]
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "social-title",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "social-url",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}

@@ -1,0 +1,95 @@
+{
+  "properties": {
+    "label": "Contact"
+  },
+  "category": "Pages",
+  "scripts": {},
+  "fieldsInLists": [],
+  "fieldsInReferences": [],
+  "fields": [
+    {
+      "name": "hero",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-title",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-heading",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "hero-image",
+      "properties": {
+        "fieldType": "Assets"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact-info",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact-address",
+      "properties": {
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact-mobile",
+      "properties": {
+        "fieldType": "String",
+        "editor": "RichText"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact-email",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Input"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "map",
+      "properties": {
+        "fieldType": "UI",
+        "editor": "Separator"
+      },
+      "partitioning": "invariant"
+    },
+    {
+      "name": "contact-map",
+      "properties": {
+        "isRequired": true,
+        "fieldType": "String",
+        "editor": "Html"
+      },
+      "partitioning": "invariant"
+    }
+  ],
+  "isPublished": true
+}
