@@ -12,7 +12,7 @@ namespace Web.Services
     {
 
 
-        Task<QueryTempleData> GetResult();
+        Task<QueryTempleData> GetResult(int top, int skip);
 
     
 
