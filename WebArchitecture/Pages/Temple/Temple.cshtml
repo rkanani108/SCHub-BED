@@ -17,16 +17,20 @@
                 <component type="typeof(Facet)" render-mode="Static" />
             </div>
             <div class="col-lg-10">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <component type="typeof(FacetSelected)" render-mode="Static" />
+
+                
+                    
+                    <div class="row" id="infinite-list">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <component type="typeof(FacetSelected)" render-mode="Static" />
+                            </div>
                         </div>
+                        <component type="typeof(SearchResult)" render-mode="Static" param-Result='@Model.Result' />
+                        <img class="loading" src="https://check-business.co.uk/static/img/loading.gif" />
                     </div>
-                    <component type="typeof(SearchResult)" render-mode="Static" param-Result='@Model.Result' />
-                    <a href="#" id="showMore">Load More...</a>
                 </div>
             </div>
-        </div>
     </div>
 </section>
+

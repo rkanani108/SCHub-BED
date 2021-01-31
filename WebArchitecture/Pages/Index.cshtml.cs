@@ -11,14 +11,14 @@ namespace Web.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly IDistributedCache _distributedCache;
+       // private readonly IDistributedCache _distributedCache;
         public readonly IHomeService _homeService;
         public HomeQueryData Data { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, IDistributedCache distributedCache, IHomeService homeService)
+        public IndexModel(ILogger<IndexModel> logger,  IHomeService homeService)
         {
             _logger = logger;
-            _distributedCache = distributedCache;
+           // _distributedCache = distributedCache;
             _homeService = homeService;
         }
 

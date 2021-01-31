@@ -19,7 +19,7 @@ namespace Web.Services.Services
         {
             var client = clientService.GetContent<Media, MediaData>("temple");
             string jsonquery = @"{
-  queryTempleContents(top: {0} skip: {1}) {
+  queryTempleContents(top:$top skip:$skip) {
     id
     lastModified
     lastModifiedBy
@@ -41,35 +41,14 @@ namespace Web.Services.Services
       }
     }
   }
-}";
-            string grapgqlQuery = string.Format(jsonquery, top, skip);
+}".Replace("$top",top.ToString()).Replace("$skip",skip.ToString());
+
+
+           // string grapgqlQuery = string.Format(jsonquery, top, skip);
             var query = new
             {
-                query = grapgqlQuery
-                //                query = @"{
-                //  queryTempleContents(top: {top} skip: {skip}) {
-                //    id
-                //    lastModified
-                //    lastModifiedBy
-                //    flatData {
-                //      name
-                //      shortDescription
-                //      description
-                //      templeImage {
-                //        url
-                //        thumbnailUrl
-                //      }
-                //      devPhotos {
-                //        url
-                //        thumbnailUrl
-                //      }
-                //      templePhotos {
-                //        url
-                //        thumbnailUrl
-                //      }
-                //    }
-                //  }
-                //}"
+                query = jsonquery
+             
             };
             var result = await client.GraphQlAsync<QueryTempleData>(query);
 

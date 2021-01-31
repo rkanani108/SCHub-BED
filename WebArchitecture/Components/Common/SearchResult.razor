@@ -2,22 +2,30 @@
 @using Web.Services.Model.Temple;
 
 
+    @foreach (var item in Result.QueryTempleContents)
+    {
+        url = @item.FlatData.TempleImage != null ? @item.FlatData.TempleImage.FirstOrDefault().ThumbnailUrl : @"";
+        <TempleTile Slug=@item.FlatData.Name
+                    Title=@item.FlatData.Name
+                    Description=@item.FlatData.ShortDescription
+                    ImageUrl="@url" />
 
-@foreach (var item in Result.QueryTempleContents)
-{
-    url = @item.FlatData.TempleImage != null ? @item.FlatData.TempleImage.FirstOrDefault().ThumbnailUrl : @"";
-    <TempleTile Slug=@item.FlatData.Name
-                Title=@item.FlatData.Name
-                Description=@item.FlatData.ShortDescription
-                ImageUrl="@url" />
+    }
 
-}
+<style>
 
-@*(@item.FlatData.TempleImage != null ? @item.FlatData.TempleImage.FirstOrDefault().ThumbnailUrl : @"");*@
+    .loading {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-@code{
+</style>
+    @*(@item.FlatData.TempleImage != null ? @item.FlatData.TempleImage.FirstOrDefault().ThumbnailUrl : @"");*@
 
-    string url = string.Empty;
-    [Parameter] public QueryTempleData Result { get; set; }
+    @code{
 
-}
+        string url = string.Empty;
+        [Parameter] public QueryTempleData Result { get; set; }
+
+    }

@@ -1,4 +1,7 @@
 ﻿$(document).on('ready', function () {
+
+
+
     $(".slick-list").addClass("slick-list-max-height");
 
 
@@ -21,6 +24,7 @@
         });
     }
 });
+
 
 /*  var slider = new MasterSlider();
 
