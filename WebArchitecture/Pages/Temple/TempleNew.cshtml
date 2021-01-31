@@ -1,0 +1,46 @@
+﻿@page "/templenew"
+@model Web.Pages.Temple.TempleNewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TempleNew</title>
+</head>
+<body>
+</body>
+</html>
+<script src="~/assets/vendor/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var currentPage = 1;
+        fetchData(9, 0);
+
+        function fetchData(top, skip) {
+            var jsonData = JSON.stringify({
+                top: top,
+                skip: skip
+            });
+
+            $.ajax({
+                url: '/api/Temple/GetTemples',
+                type: 'POST',
+                data: jsonData,
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    data.forEach(function (element) {
+                        $("#result").append("<h3>" + element + "</h3>");
+                    });
+                },
+                error: function () {
+                    $("#msg").html("Error while calling the Web API!");
+                }
+            });
+        }
+    });
+</script>
